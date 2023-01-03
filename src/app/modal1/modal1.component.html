@@ -1,0 +1,8 @@
+
+    <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Open the Modal</span></button>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="Test for @input" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <ng-container *nzModalContent>
+        <app-modal-display [informations]="currentInformation"></app-modal-display>
+      </ng-container>
+    </nz-modal>
+  
